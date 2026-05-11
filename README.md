@@ -103,6 +103,59 @@ The output has two parts:
 
 This consistent structure helps an LLM understand the repository before reading the code.
 
+### Example output
+
+Running against a minimal project:
+
+```text
+PROJECT STRUCTURE:
+==================
+Root: tiny-project
+├── src
+│   └── main.py
+└── README.md
+
+
+PROJECT FILE CONTENTS:
+
+================================================================================
+FILE: README.md
+================================================================================
+# tiny-project
+Minimal example for repo2llm output.
+
+================================================================================
+FILE: src/main.py
+================================================================================
+def hello():
+    return "hello"
+```
+
+The tree is rendered first so the LLM can build a mental model of the
+repository before reading individual files. File separators use
+`FILE: <relative-path>` so the LLM can cite specific files by path.
+
+## Comparison
+
+Other tools in the same niche exist; the trade-offs are different.
+
+| | **repo2llm** | repomix | code2prompt | gptree |
+|---|---|---|---|---|
+| Language | Python | TypeScript | Rust | Python |
+| Install | `git clone` | `npm i -g` | `cargo install` | `pipx install` |
+| Runtime deps | **none (stdlib only)** | Node.js + npm tree | Rust toolchain | Python packages |
+| Token counting | — | yes (tiktoken) | yes | — |
+| Secret detection | — | yes (Secretlint) | — | — |
+| Output formats | plain text | Markdown, XML, JSON | templated | plain text |
+| Custom ignore file | `.llmignore` | `.repomixignore` | `.gitignore` | `.gptreerc` |
+
+repo2llm trades features for installation simplicity: there is nothing
+to install beyond a Python interpreter, which means it works in
+locked-down environments where `npm` / `cargo` / external packages
+are not available. If token counting or secret scanning matter for
+the workflow, repomix is more featureful; if performance on very
+large monorepos matters, code2prompt is faster.
+
 ## Configuration
 
 ### `.llmignore`
@@ -164,7 +217,7 @@ Contributions are welcome.
 4. Add or update docs when behavior changes
 5. Open a PR
 
-## 📜 Citation
+## Citation
 
 If you use this software in academic or research contexts, cite the Zenodo archival record below.
 
