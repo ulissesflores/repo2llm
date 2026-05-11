@@ -1,5 +1,5 @@
 {
-  "title": "LLM Contextizer",
+  "title": "repo2llm",
   "description": "<p><strong>Zero-dependency CLI for generating LLM-ready repository contexts.</strong></p><p>The tool emits a deterministic ASCII project tree followed by concatenated file contents, optimized for LLM context windows. It includes sensible defaults for noise filtering, truncation of log-like files, and protection against stdout self-inclusion when redirecting output to a file inside the scanned root.</p>",
   "creators": [
     {

@@ -6,7 +6,7 @@
 
 ## Context
 
-LLM Contextizer is a CLI tool intended to be run directly in arbitrary codebases and environments.
+repo2llm is a CLI tool intended to be run directly in arbitrary codebases and environments.
 The primary use case is generating a single, token-efficient textual snapshot of a project for use in LLM prompts.
 
 Most Python CLIs introduce dependency and environment friction (pip/venv/poetry/click/rich/etc.).
@@ -14,7 +14,7 @@ That friction directly harms portability, onboarding, and “copy → run” usa
 
 ## Decision
 
-LLM Contextizer SHALL be implemented using only the Python standard library.
+repo2llm SHALL be implemented using only the Python standard library.
 
 - No third-party packages.
 - No runtime dependency installation steps.

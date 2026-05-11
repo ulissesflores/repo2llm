@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the Zenodo archival record below."
-title: "LLM Contextizer"
+title: "repo2llm"
 type: software
 version: 0.1.7
 doi: 10.5281/zenodo.18343438
@@ -11,7 +11,7 @@ authors:
     given-names: Carlos Ulisses
     affiliation: "Codex Hash Ltda. (Brazil)"
     orcid: "https://orcid.org/0000-0002-6034-7765"
-repository-code: "https://github.com/ulissesflores/llm-contextizer"
+repository-code: "https://github.com/ulissesflores/repo2llm"
 license: Apache-2.0
 abstract: >
   Zero-dependency CLI that generates an LLM-optimized textual context from a codebase
@@ -28,7 +28,7 @@ keywords:
 
 preferred-citation:
   type: software
-  title: "LLM Contextizer"
+  title: "repo2llm"
   authors:
     - family-names: Flores
       given-names: Carlos Ulisses

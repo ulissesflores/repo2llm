@@ -2,13 +2,13 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "@id": "https://doi.org/10.5281/zenodo.18343438",
-  "name": "LLM Contextizer",
+  "name": "repo2llm",
   "description": "Zero-dependency CLI that produces an LLM-optimized text snapshot of a repository (ASCII tree plus concatenated file contents) with deterministic ordering, ignore rules, truncation of log-like files, and stdout self-inclusion safety.",
-  "codeRepository": "https://github.com/ulissesflores/llm-contextizer",
+  "codeRepository": "https://github.com/ulissesflores/repo2llm",
   "identifier": "https://doi.org/10.5281/zenodo.18343438",
   "sameAs": [
     "https://doi.org/10.5281/zenodo.18343438",
-    "https://github.com/ulissesflores/llm-contextizer"
+    "https://github.com/ulissesflores/repo2llm"
   ],
   "license": "https://spdx.org/licenses/Apache-2.0",
   "version": "0.1.7",

@@ -1,4 +1,4 @@
-# LLM Contextizer
+# repo2llm
 
 **A zero-dependency Python CLI for turning a codebase into an LLM-ready text snapshot.**
 
@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/status-stable-green" alt="Status">
 </p>
 
-`LLM Contextizer` scans a project directory, prints a readable ASCII tree, and then emits a single concatenated text output of file contents. The result is designed for copy/paste into ChatGPT, Claude, Gemini, or any other LLM workflow where you need a fast, deterministic snapshot of a repository.
+`repo2llm` scans a project directory, prints a readable ASCII tree, and then emits a single concatenated text output of file contents. The result is designed for copy/paste into ChatGPT, Claude, Gemini, or any other LLM workflow where you need a fast, deterministic snapshot of a repository.
 
 ## At a glance
 
@@ -57,14 +57,14 @@ This tool aims to be:
 Clone the repository. There are no runtime dependencies.
 
 ```bash
-git clone https://github.com/ulissesflores/llm-contextizer.git
-cd llm-contextizer
+git clone https://github.com/ulissesflores/repo2llm.git
+cd repo2llm
 ```
 
 Optional: create a shell alias for faster local use.
 
 ```bash
-alias llmctx='python3 /absolute/path/to/llm-contextizer/src/contextizer.py'
+alias llmctx='python3 /absolute/path/to/repo2llm/src/contextizer.py'
 ```
 
 ## Quick start
@@ -176,9 +176,9 @@ The repository continues beyond the archived runtime release through documentati
 
 ### BibTeX
 ```bibtex
-@software{flores_2026_llm_contextizer,
+@software{flores_2026_repo2llm,
   author       = {Flores, Carlos Ulisses},
-  title        = {LLM Contextizer},
+  title        = {repo2llm},
   year         = {2026},
   version      = {v0.1.1},
   publisher    = {Zenodo},
@@ -188,7 +188,7 @@ The repository continues beyond the archived runtime release through documentati
 ```
 
 ### APA
-Flores, C. U. (2026). *LLM Contextizer* (v0.1.1) [Software]. Zenodo. https://doi.org/10.5281/zenodo.18343438
+Flores, C. U. (2026). *repo2llm* (v0.1.1) [Software]. Zenodo. https://doi.org/10.5281/zenodo.18343438
 
 > For reproducibility and scholarly reference, prefer the Zenodo DOI rather than an unversioned repository URL.
 

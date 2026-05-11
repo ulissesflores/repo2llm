@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LLM Contextizer - Project Context Generator
+repo2llm - Project Context Generator
 
 This module traverses a directory structure and generates a single text output
 containing the file tree and file contents, optimized for Large Language Model

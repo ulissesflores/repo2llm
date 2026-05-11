@@ -1,4 +1,4 @@
-# LLM Contextizer ignore rules (example)
+# repo2llm ignore rules (example)
 # Syntax:
 # - dir/      ignores directory (by name)
 # - *.ext     ignores file extension
